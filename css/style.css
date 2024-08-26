@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+header
+{
+    
+    top: 0;
+    left: 0;
+    padding: 25px 10%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: black;
+    position: fixed;
+    opacity: 90%;
+    margin-bottom: 500px;
+}
+
+header a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    gap: 50px;
+}
+
+.home{
+    padding: 150px 0 150px 0; 
+    gap: 100px;
+}
+
+.resume{
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+.home{
+  flex-direction: column;
+  justify-content: center;
+   text-align: center;
+
+   .welcome-head h3{
+    white-space: normal;
+   }
+}
+
+
+
+
+}
+
+.welcome-head h3{
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  
+  animation: 
+    typing 2.5s steps(20) infinite,
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 0, 0) }
+}
+
+.social-contact{
+    gap: 20px;
+}
+
+
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  @media (max-width: 768px) {
+    header {
+
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+    }
+  
+    nav.active {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+      position: absolute;
+     right: 10%;     
+    }
+  }
+  
+  .home{
+    width: auto;
+  }
+
+  .img-one{
+    box-shadow: 20px 20px  #090f32;
+  }
+ 
+  .About{
+    background-color: white;
+  }
+
+  .about-me-section{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .skills{
+    gap: 80px;
+  }
+  .tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+
+  .project-content{
+    column-gap: 80px;
+  } 
+
+.project-text{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  @media (max-width: 466px) {
+    .proj-img ,.me-img, .img-one{
+      width: 100%;
+    }
+
+  }
